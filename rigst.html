@@ -1,0 +1,88 @@
+<div class="col-left">
+	<div id="time">
+		<img src="templates/jsn_metro_pro/images/content/socials/icon-watch.png" alt="icon-watch" />
+		<script type="text/javascript">
+		<!--
+		
+		var d_names = new Array("Воскресенье", "Понедельник", "Вторник",
+		"Среда", "Четверг", "Пятница", "Суббота");
+		
+		var m_names = new Array("Янв", "Фев", "Мрт", 
+		"Апр", "Май", "Июн", "Июл", "Авг", "Сен", 
+		"Окт", "Ноя", "Дек");
+		
+		var d = new Date();
+		var curr_day = d.getDay();
+		var curr_date = d.getDate();
+		/*var sup = "";
+		if (curr_date == 1 || curr_date == 21 || curr_date ==31)
+		   {
+		   sup = "ый";
+		   }
+		else if (curr_date == 2 || curr_date == 22)
+		   {
+		   sup = "ой";
+		   }
+		else if (curr_date == 3 || curr_date == 23)
+		   {
+		   sup = "тий";
+		   }
+		else
+		   {
+		   sup = "th";
+		   }
+           */
+		var curr_month = d.getMonth();
+		var curr_year = d.getFullYear();
+		
+		document.write("<span>" + d_names[curr_day] + "</span>" + " " + m_names[curr_month] + " "  + curr_date 
+		+ "   " + "," + " " + curr_year);
+		
+		//-->
+		</script>
+	</div>
+	<div class="clearbreak"></div>
+<div class="galery"><a href="http://ork-siberia.ru/index.php/kontakty/obratnaya-svyaz">
+		<img src="templates/jsn_metro_pro/images/content/socials/feedback_green3.jpg" alt="Demo">
+
+
+		<div class="caption">
+			<h5 style="font-family:Arial;color:#fff;font-weight:bold">Книга отзывов</h5>
+			<p>напишите нам</p>
+		</div>
+	</div>
+	<div class="clearbreak"></div>
+</div>
+<div class="col-right">
+	<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://demo.joomlashine.com/joomla-templates/jsn_metro/pro/media/js/MetroJs.min.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+			 $.noConflict();
+			jQuery(document).ready(function($){
+			jQuery("#tile1").liveTile({
+				mode:'flip',
+				}
+			);
+			jQuery("#tile2").liveTile({
+				mode:'flip',
+				}
+			);
+			jQuery("#tile3").liveTile({
+				  mode:'slide',        
+				}
+			);
+		});//]]>
+	</script>
+	<link rel="stylesheet" href="http://demo.joomlashine.com/joomla-templates/jsn_metro/pro/media/js/MetroJs.css" type="text/css" />
+	<div class="tiles red">
+		<div id="tile1" class="live-tile" data-delay="7500" data-initdelay="1500">        
+			<div class="front"><a href="https://ok.ru/sibir.orkestr"><img style="margin-bottom:15px" src="/images/icons/ok1.png" alt="OK" class="full"></a></div>
+			<div class="front"><a href="https://ok.ru/sibir.orkestr"><img style="margin-bottom:15px" src="/images/icons/ok2.png" alt="OK" class="full"></a></div>
+		</div>
+		<div id="tile2" class="live-tile blue" data-direction="horizontal" data-initdelay="2500" data-delay="5000">     
+			<div class="front"><a href="https://vk.com/club50644487"><img src="/images/icons/vk.png" alt="VK" class="full"></a> </div>
+			<div class="front"><a href="https://vk.com/club50644487"><img src="/images/icons/vk2.png" alt="VK" class="full"></a> </div>
+		</div>
+		</div>
+</div>
